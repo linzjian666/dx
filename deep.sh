@@ -72,19 +72,19 @@ if [[ $yesno =~ "Y"|"y" ]]; then
                         "dest":3001
                     },
                     {
-                        "path":"/vless",
+                        "path":"/$uuid-vl",
                         "dest":3002
                     },
                     {
-                        "path":"/vmess",
+                        "path":"/$uuid-vm",
                         "dest":3003
                     },
                     {
-                        "path":"/trojan",
+                        "path":"/$uuid-tr",
                         "dest":3004
                     },
                     {
-                        "path":"/shadowsocks",
+                        "path":"/$uuid-ss",
                         "dest":3005
                     }
                 ]
@@ -128,7 +128,7 @@ if [[ $yesno =~ "Y"|"y" ]]; then
                 "network":"ws",
                 "security":"none",
                 "wsSettings":{
-                    "path":"/vless"
+                    "path":"/$uuid-vl"
                 }
             },
             "sniffing":{
@@ -156,7 +156,7 @@ if [[ $yesno =~ "Y"|"y" ]]; then
             "streamSettings":{
                 "network":"ws",
                 "wsSettings":{
-                    "path":"/vmess"
+                    "path":"/$uuid-vm"
                 }
             },
             "sniffing":{
@@ -184,7 +184,7 @@ if [[ $yesno =~ "Y"|"y" ]]; then
                 "network":"ws",
                 "security":"none",
                 "wsSettings":{
-                    "path":"/trojan"
+                    "path":"/$uuid-tr"
                 }
             },
             "sniffing":{
@@ -213,7 +213,7 @@ if [[ $yesno =~ "Y"|"y" ]]; then
             "streamSettings":{
                 "network":"ws",
                 "wsSettings":{
-                    "path":"/shadowsocks"
+                    "path":"/$uuid-ss"
                 }
             },
             "sniffing":{
